@@ -95,11 +95,11 @@
    .promo__nav a:hover {
     color: #1abc9c;
    }
-.promo__nav img:hover {
+   .promo__nav img:hover {
     transform: rotateZ(360deg);
    }
 .promo__nav img {
- transition: all 0.1s ease-in-out;
+ transition: all 0.3s ease-in-out;
 }
 
    .promo__info {
@@ -184,7 +184,7 @@
    }
 
    .promo__footer > ul > li > a {
-    transition: all 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
    }
 
    .photoapp {
