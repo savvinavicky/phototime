@@ -1,0 +1,479 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+    display: block;
+   }
+   body {
+    line-height: 1;
+   }
+   ol, ul {
+    list-style: none;
+   }
+   blockquote, q {
+    quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+    content: '';
+    content: none;
+   }
+   table {
+    border-collapse: collapse;
+    border-spacing: 0;
+   }
+
+   * {
+    box-sizing: border-box;
+   }
+
+   :root {
+    font-size: 16px;
+   }
+
+   .container {
+    width: 1280px;
+    margin: auto;
+   }
+
+   body {
+    font-family: Gothamrounded;
+   }
+
+   .promo {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/bg.jpg");
+    min-height: 745px;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .promo__nav > ul {
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+   }
+
+   .promo__nav > ul > li {
+    margin: 0 40px;
+   }
+
+   .promo__nav > ul > li > a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+
+   }
+
+   .promo__nav a:hover {
+    color: #1abc9c;
+   }
+
+   .promo__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .promo__info > h1 {
+    max-width: 500px;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    font-weight: bold;
+    word-spacing: 12px;
+    margin-bottom: 23px;
+   }
+
+   .promo__info > p {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: medium;
+    word-spacing: 5px;
+    margin-bottom: 28px;
+   }
+
+   .button {
+    display: inline-block;
+    padding: 20px 35px;
+    background-color: #16a085;
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    word-spacing: 5px;
+   }
+
+   .button:hover {
+    background-color: #1abc9c;
+    color: #373737;
+    border: 1px solid #11cba6;
+    
+   }
+
+   .promo__footer > ul {
+    display: flex;
+    padding-bottom: 26px;
+   }
+
+   .promo__footer > ul > li {
+    margin: 0 8px;
+    text-indent: -9999em;
+    
+   }
+
+   .promo__footer > ul > li:nth-child(1) a {
+    background-image: url("../img/twitter.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
+   }
+
+   .promo__footer > ul > li:nth-child(2) a {
+    background-image: url("../img/flickr.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
+   }
+
+   .promo__footer > ul > li:nth-child(3) a {
+    background-image: url("../img/dribbble.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
+   }
+
+   .promo__footer > ul > li > a:hover {
+    transform: rotateZ(360deg);
+    transition: all 1s ease-in-out;
+   }
+
+   .photoapp {
+    background-color: #fff; 
+    background-image: url("../img/iphone-bg.png");
+    background-position: 515px 91px;
+    background-repeat: no-repeat;
+    min-height: 491px;
+   }
+
+   .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 430px;
+    padding-left: 64px;
+    margin: 0 64px;
+   }
+   
+span {
+ font-weight: bold;
+}
+
+   .button__photoapp {
+    align-self: flex-start;
+   }
+
+   .card > h2 {
+    margin-left: -3px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    font-size: 1.125rem;
+    color: #16a085;
+    font-weight: bold;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    word-spacing: 7px;
+   }
+
+   .card > p {
+    font-weight: medium;
+    font-size: .75rem;
+    line-height: 2.083;
+    margin-bottom: 40px;
+    word-spacing: 5px;
+    color: #373737;
+   }
+
+   .container > .photoapp {
+    padding-top: 108px;
+    padding-bottom: 90px;
+   }
+
+   .design {
+    min-height: 560px;
+    background-color: #fff; 
+    background-image: url("../img/idesign-bg.png");
+    background-position: 126px 148px;
+    background-repeat: no-repeat;
+   }
+
+   .container > .design {
+    padding-top: 147px;
+    padding-bottom: 83px;
+    display: flex;
+    justify-content: flex-end;
+   }
+
+   .button__design {
+    align-self: flex-start;
+    margin-bottom: 45px;
+   }
+
+   .card__design {
+    justify-content: flex-end;
+    max-width: 430px;
+    margin: 0 40px;
+   }
+
+   .slider {
+    display: flex;
+    flex-direction: column;
+   }
+
+
+
+   .slider__design {
+    text-align: left;
+   }
+
+   .slider span {
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #373737;
+    font-size: 0.750rem;
+   }
+
+   .arrow {
+    display: flex;
+    justify-content: flex-start;
+   }
+
+   .arrow a { 
+    display: block;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 10px;
+   }
+
+   .arrow__left {
+    margin-right: 20px;
+   }
+
+   .slider__photo {
+    min-height: 485px;
+    background-color: #f5f6f7;
+   }
+
+   .slider__nav {
+    display: flex;
+    align-items: flex-end;
+    margin: 95px 128px 0 1115px;
+    width: 40px;
+   }
+
+   .slider__main {
+    display: flex;
+   }
+
+   .slider__logo {
+    align-items: flex-start;
+    margin: 0 128px;
+   }
+
+   .slider__img {
+    align-items: flex-end;
+   }
+
+   .subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 790px;
+    background-image: url("../img/subscribe-bg.jpg");
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .subscribe > h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    word-spacing: 8px;
+    font-size: 1.5rem;
+    margin-bottom: 35px;
+   }
+
+   .subscribe form {
+    display: flex;
+    justify-content: center;
+   }
+
+   .subscribe input[placeholder] {
+    text-transform: uppercase;
+    font-weight: medium;
+    word-spacing: 5px;
+    font-size: 1rem;
+    text-align: left;
+    color: #373737;
+   }
+
+   .subscribe input {
+    padding: 20px;
+    width: 280px;
+    border-radius: 3px 0 0 3px;
+    border: none;
+   }
+
+   .subscribe button[type="submit"] {
+    width: 64px;
+    height: 60px;
+    background: #16a085 url("../img/check-butt.png") center no-repeat;
+    border: none;
+    border-radius: 0 3px 3px 0;
+   }
+
+   .download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 396px;
+    background-color: #f5f6f7;
+   }
+
+   .download h2 {
+    color: #373737;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.25rem;
+    word-spacing: 7px;
+    margin-bottom: 20px;
+   }
+
+   .download p {
+    max-width: 816px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: medium;
+    color: #373737;
+    word-spacing: 5px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 50px;
+   }
+
+   .download a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .download__button-group {
+    display: flex;
+    justify-content: center;
+   }
+
+   .download__button:hover {
+    background-color: #16a085;
+   }
+
+   .download__button {
+    width: 300px;
+    height: 56px;
+    padding: 20px;
+    background-color: #1abc9c;
+    background-repeat: no-repeat;
+    background-position: center right;
+    border: none;
+    border-radius: 3px; 
+    text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    word-spacing: 5px;
+    text-align: left;
+    margin: 0 15px;
+   }
+
+   .download .download_apple {
+    background-image: url("../img/apple.png");
+   }
+
+   .download .download_android {
+    background-image: url("../img/android.png");
+   }
+
+   .footer {
+    min-height: 132px;
+    padding: 50px 128px 40px 128px;
+    background-color: #fff;
+    background-image: url(../img/logo-foot.png);
+    background-repeat: no-repeat;
+    background-position: 1100px 38px;
+   }
+
+   .footer__links {
+    display: flex;
+    margin-bottom: 26px;
+   }
+
+   .footer__links a {
+    color: #373737;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.875rem;
+    border-right: solid 2px #16a085;
+    padding: 0 6px;
+   }
+
+   .footer__links a:hover {
+    color: #1abc9c;
+   }
+
+   .footer__links li:first-child a {
+    padding-left: 0;
+   }
+
+   .footer__copyright {
+    color: #373737;
+    font-size: 0.875rem;
+    word-spacing: 5px;
+    font-weight: bold;
+   }

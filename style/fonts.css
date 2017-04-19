@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Gothamrounded';
+  src: url('../fonts/GothamRoundedBook_21018.ttf');
+  src: url('../fonts/GothamRounded-Book.otf');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Gothamrounded';
+  src: url('../fonts/GothamRoundedMedium_21022.ttf');
+  src: url('../fonts/GothamRounded-Medium.otf');
+  font-weight: medium;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Gothamrounded';
+  src: url('../fonts/GothamRoundedLight_21020.ttf');
+  src: url('../fonts/GothamRounded-Light.otf');
+  font-weight: lighter;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Gothamrounded';
+  src: url('../fonts/GothamRounded-MediumItalic.otf');
+  font-weight: medium;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'Gothamrounded';
+  src: url('../fonts/GothamRoundedBold_21016.ttf');
+  src: url('../fonts/GothamRounded-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+
+}
