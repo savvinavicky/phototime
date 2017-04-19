@@ -97,8 +97,11 @@
    }
 .promo__nav img:hover {
     transform: rotateZ(360deg);
-    transition: all 1s ease-in-out;
    }
+.promo__nav img {
+ transition: all 0.1s ease-in-out;
+}
+
    .promo__info {
     display: flex;
     flex-direction: column;
@@ -150,7 +153,6 @@
    .promo__footer > ul > li {
     margin: 0 8px;
     text-indent: -9999em;
-    
    }
 
    .promo__footer > ul > li:nth-child(1) a {
@@ -179,7 +181,10 @@
 
    .promo__footer > ul > li > a:hover {
     transform: rotateZ(360deg);
-    transition: all 1s ease-in-out;
+   }
+
+   .promo__footer > ul > li > a {
+    transition: all 0.1s ease-in-out;
    }
 
    .photoapp {
