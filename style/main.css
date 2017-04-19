@@ -368,6 +368,10 @@ span {
     border-radius: 0 3px 3px 0;
    }
 
+   button[type="submit"]:hover {
+   background-color: #1abc9c;
+   }
+
    .download {
     display: flex;
     flex-direction: column;
